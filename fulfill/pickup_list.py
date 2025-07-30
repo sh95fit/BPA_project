@@ -1,16 +1,52 @@
 import os
+import sys
 from sshtunnel import SSHTunnelForwarder
 import pymysql
 from dotenv import load_dotenv
 import pandas as pd
 
-load_dotenv()
+# PyInstaller 환경에서 .env 파일 찾기
+if getattr(sys, 'frozen', False):
+    # PyInstaller로 빌드된 경우
+    application_path = os.path.dirname(sys.executable)
+    # PyInstaller 임시 디렉토리 확인
+    if hasattr(sys, '_MEIPASS'):
+        temp_path = sys._MEIPASS
+    else:
+        temp_path = application_path
+    
+    # .env 파일 경로 설정 (여러 위치 확인)
+    env_paths = [
+        os.path.join(application_path, '.env'),
+        os.path.join(temp_path, '.env'),
+        '.env'  # 현재 작업 디렉토리
+    ]
+    
+    env_loaded = False
+    for env_path in env_paths:
+        print(f"Looking for .env at: {env_path}")
+        print(f"File exists: {os.path.exists(env_path)}")
+        
+        if os.path.exists(env_path):
+            load_dotenv(env_path)
+            env_loaded = True
+            print(f"Successfully loaded .env from: {env_path}")
+            break
+    
+    if not env_loaded:
+        print("WARNING: .env file not found in any location!")
+        # 기본 .env 로드 시도
+        load_dotenv()
+else:
+    # 일반 Python 스크립트인 경우
+    load_dotenv()
 
 # 환경변수에서 설정값 가져오기
 SSH_HOST = os.getenv("SSH_HOST")
 SSH_PORT = int(os.getenv("SSH_PORT", 22))
 SSH_USER = os.getenv("SSH_USER")
 SSH_KEY_PATH = os.getenv("SSH_KEY_PATH")
+SSH_PASSWORD = os.getenv("SSH_PASSWORD")  # SSH 비밀번호 추가
 
 DB_HOST = os.getenv("DB_HOST")
 DB_PORT = int(os.getenv("DB_PORT", 3306))
@@ -18,17 +54,98 @@ DB_USER = os.getenv("DB_USER")
 DB_PASSWORD = os.getenv("DB_PASSWORD")
 DB_ORDER_SERVICE = os.getenv("DB_ORDER_SERVICE")
 
+# SSH 인증 방식 결정
+ssh_auth_method = None
+if SSH_KEY_PATH:
+    # SSH 키 파일 경로 처리
+    if getattr(sys, 'frozen', False):
+        # PyInstaller로 빌드된 경우 - 절대 경로 사용
+        if not os.path.isabs(SSH_KEY_PATH):
+            # 상대 경로인 경우 절대 경로로 변환
+            SSH_KEY_PATH = os.path.abspath(SSH_KEY_PATH)
+        print(f"PyInstaller mode - SSH Key path: {SSH_KEY_PATH}")
+    else:
+        # 로컬 개발 환경 - 상대 경로 허용
+        if not os.path.isabs(SSH_KEY_PATH):
+            SSH_KEY_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), SSH_KEY_PATH)
+        print(f"Local mode - SSH Key path: {SSH_KEY_PATH}")
+    
+    if os.path.exists(SSH_KEY_PATH):
+        ssh_auth_method = "key"
+        print(f"SSH Key authentication will be used: {SSH_KEY_PATH}")
+    else:
+        print(f"WARNING: SSH key file not found: {SSH_KEY_PATH}")
+        SSH_KEY_PATH = None
+
+if not ssh_auth_method and SSH_PASSWORD:
+    ssh_auth_method = "password"
+    print("SSH Password authentication will be used")
+
+if not ssh_auth_method:
+    print("ERROR: No SSH authentication method available!")
+    print("Please set either SSH_KEY_PATH or SSH_PASSWORD in your .env file")
+    input("Press Enter to exit...")
+    exit(1)
+
+# 필수 환경변수 검증
+missing_vars = []
+if not SSH_HOST:
+    missing_vars.append("SSH_HOST")
+if not SSH_USER:
+    missing_vars.append("SSH_USER")
+if not DB_HOST:
+    missing_vars.append("DB_HOST")
+if not DB_USER:
+    missing_vars.append("DB_USER")
+if not DB_PASSWORD:
+    missing_vars.append("DB_PASSWORD")
+if not DB_ORDER_SERVICE:
+    missing_vars.append("DB_ORDER_SERVICE")
+
+if missing_vars:
+    print("ERROR: Required environment variables are missing!")
+    print(f"Missing variables: {', '.join(missing_vars)}")
+    print("Please check your .env file.")
+    input("Press Enter to exit...")
+    exit(1)
+
+# 환경 변수 디버깅 정보 출력
+print("\n=== Environment Variables Debug Info ===")
+print(f"SSH_HOST: {'***' if SSH_HOST else 'NOT SET'}")
+print(f"SSH_PORT: {SSH_PORT}")
+print(f"SSH_USER: {'***' if SSH_USER else 'NOT SET'}")
+print(f"SSH_KEY_PATH: {'***' if SSH_KEY_PATH else 'NOT SET'}")
+print(f"SSH_PASSWORD: {'***' if SSH_PASSWORD else 'NOT SET'}")
+print(f"DB_HOST: {'***' if DB_HOST else 'NOT SET'}")
+print(f"DB_PORT: {DB_PORT}")
+print(f"DB_USER: {'***' if DB_USER else 'NOT SET'}")
+print(f"DB_PASSWORD: {'***' if DB_PASSWORD else 'NOT SET'}")
+print(f"DB_ORDER_SERVICE: {'***' if DB_ORDER_SERVICE else 'NOT SET'}")
+print(f"SSH Auth Method: {ssh_auth_method}")
+print("=" * 40)
+
 
 def get_pickup_data_by_keyword(address_keyword: str):
     """주소 키워드로 픽업 데이터 조회"""
     query = "CALL order_service.get_pickup_list(%s)"
     
-    with SSHTunnelForwarder(
-        (SSH_HOST, SSH_PORT),
-        ssh_username=SSH_USER,
-        ssh_pkey=SSH_KEY_PATH,
-        remote_bind_address=(DB_HOST, DB_PORT)
-    ) as tunnel:
+    # SSH 터널 설정 (인증 방식에 따라 다르게 설정)
+    if ssh_auth_method == "key":
+        tunnel = SSHTunnelForwarder(
+            (SSH_HOST, SSH_PORT),
+            ssh_username=SSH_USER,
+            ssh_pkey=SSH_KEY_PATH,
+            remote_bind_address=(DB_HOST, DB_PORT)
+        )
+    else:  # password
+        tunnel = SSHTunnelForwarder(
+            (SSH_HOST, SSH_PORT),
+            ssh_username=SSH_USER,
+            ssh_password=SSH_PASSWORD,
+            remote_bind_address=(DB_HOST, DB_PORT)
+        )
+
+    with tunnel:
         conn = pymysql.connect(
             host='127.0.0.1',
             port=tunnel.local_bind_port,
