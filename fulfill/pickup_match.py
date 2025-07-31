@@ -117,9 +117,9 @@ if missing_vars:
     exit(1)
 
 
-def get_pickup_data_by_keyword(address_keyword: str):
+def get_pickup_data_by_keyword(address_keyword: str, delivery_date: str):
     """주소 키워드로 픽업 데이터 조회"""
-    query = "CALL order_service.get_pickup_list(%s)"
+    query = "CALL order_service.get_pickup_list(%s, %s)"
 
     with SSHTunnelForwarder(
         (SSH_HOST, SSH_PORT),
@@ -138,11 +138,11 @@ def get_pickup_data_by_keyword(address_keyword: str):
 
         try:
             # pandas로 직접 읽기 (커서 재사용 문제 방지)
-            df = pd.read_sql(query, conn, params=[address_keyword])
+            df = pd.read_sql(query, conn, params=[address_keyword, delivery_date])
             # 만약 여전히 문제가 있다면 cursor로 직접 변환
             if df.empty and len(df.columns) > 0:
                 with conn.cursor() as cursor:
-                    cursor.execute(query, [address_keyword])
+                    cursor.execute(query, [address_keyword, delivery_date])
                     results = cursor.fetchall()
                     if results:
                         df = pd.DataFrame(results, columns=[desc[0] for desc in cursor.description])
@@ -158,7 +158,7 @@ def get_delivery_date_input():
 
     while True:
         try:
-            delivery_date = input("배송일자를 입력하세요 (YYYY-MM-DD 형식): ").strip()
+            delivery_date = input("배송일자(수거일자-1일)를 입력하세요 (YYYY-MM-DD 형식): ").strip()
 
             # 날짜 형식 검증
             if len(delivery_date) == 10 and delivery_date[4] == '-' and delivery_date[7] == '-':
@@ -237,13 +237,15 @@ def main():
 
     # 모든 결과를 저장할 리스트
     all_results = []
+    # 실패 결과를 저장할 리스트
+    failed_keywords = []
 
     # 각 키워드별로 데이터 조회
     for i, keyword in enumerate(address_keywords, 1):
         print(f"처리 중... ({i}/{len(address_keywords)}) {keyword}")
 
         try:
-            df = get_pickup_data_by_keyword(keyword)
+            df = get_pickup_data_by_keyword(keyword, delivery_date)
 
             if not df.empty:
                 # 키워드 정보 추가
@@ -252,9 +254,11 @@ def main():
                 print(f"  → {len(df)}건 조회됨")
             else:
                 print(f"  → 데이터 없음")
+                failed_keywords.append(keyword)
 
         except Exception as e:
             print(f"  → 오류: {e}")
+            failed_keywords.append(keyword)
 
     if not all_results:
         print("\n조회된 데이터가 없습니다.")
@@ -272,6 +276,11 @@ def main():
     keyword_stats = final_df.groupby(address_column).size()
     for keyword, count in keyword_stats.items():
         print(f"  {keyword}: {count}건")
+        
+    if failed_keywords:
+        print("\n조회 실패한 키워드 : ")
+        for i, fk in enumerate(failed_keywords, 1) :
+            print(f" {i}. {fk}")
 
     # Excel 파일로 저장 (배송일자 포함, 중복 시 번호 추가)
     base_filename = f"pickup_data_{delivery_date.replace('-', '')}"
