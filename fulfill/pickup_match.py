@@ -268,7 +268,8 @@ def main():
     print(f"키워드별 조회 결과:")
 
     # 키워드별 통계
-    keyword_stats = final_df.groupby('search_keyword').size()
+    address_column = final_df.columns[0]
+    keyword_stats = final_df.groupby(address_column).size()
     for keyword, count in keyword_stats.items():
         print(f"  {keyword}: {count}건")
 
