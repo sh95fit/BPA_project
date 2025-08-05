@@ -1,0 +1,1108 @@
+=== OCR 결과 분석 ===
+
+** 최고 결과 (신뢰도: 0.66) **
+40006666036891666002
+A2719041-27
+4274
+012022
+0600-070002000750882620297
+191-178901050109101090109-7017
+AA0AAA-7A
+
+==================================================
+
+[기본 전처리_기본 한영]
+신뢰도: 0.57
+길이: 442
+내용:
+4.000 에 서 666603 다 사 용 하 기 (pytaseeract}
+70 애 메 서 7055002 다 를 사 용 하 기 위 해 서는 pyiosseract% pillowll 설 치 해 야 한 다 .
+cnet pip 설 치 를 한 다 .
+700000
+> pip install pytesseract
+살 치 가 끝 냐 민 야 매 와 22 코 드 롬 Bel aS 수 있 다 .
+ftom ~66642
+from pytesseract import *
+‘flename = "D-/Dala/oofsample ing"
+image = Image.open(filename)
+text=image_fo_string(image, lang="kor)
+‘wih open(aampla Gf, “west
+102
+위 의 코 드 롬 0 ㅁ . 6662 ㅁ 로 저장 후 섬 행 시 카 민 sample tat 결 파 가 BHA.
+------------------------------
+
+[기본 전처리_세밀 한영]
+신뢰도: 0.00
+길이: 3
+내용:
+= -
+------------------------------
+
+[기본 전처리_블록 단위]
+신뢰도: 0.57
+길이: 454
+내용:
+4.000 에 서 666603 다 사 용 하 기 (pytaseeract}
+
+70 애 메 서 7055002 다 를 사 용 하 기 위 해 서는 pyiosseract% pillowll 설 치 해 야 한 다 .
+cnt pip 설 치 를 한 다 .
+
+02200
+
+>pip install pytesseract
+
+P07} 끝 냐 민 야 매 와 갖 은 코 드 롬 통 해 실 형할 수 있 다 .
+
+ftom PIL buport Image
+ftom pytesseract import*
+
+flename = "D/Datefoctsmmpielos"
+image = Inega.open(liename}
+text=image_fo_string(image, lang="kor)
+
+‘wih open(aampla Gf, “west
+102
+
+위 의 코 드 롬 0 ㅁ . 6662 ㅁ 로 저장 후 섬 행 시 카 민 sample tat 결 파 가 BHA.
+------------------------------
+
+[기본 전처리_한글 전용]
+신뢰도: 0.55
+길이: 422
+내용:
+4.000 에 서 666603 다 사 용 하 기 6891666002 ㄷ )
+70 애 메 서 7055002 다 를 사 용 하 기 위 해 서는 [9465500= 다 아 [0808 를 설 치 해 야 한 다 .
+0 청 매 서 5622 설 치 를 한 다 .
+700000
+08 데리 [312955200 다 .
+살 치 가 끝 냐 민 야 매 와 같 은 코 드 롬 동 해 실 형 할 수 있 다 .
+. ~66642
+ 000095560 다 621
+0600 -07000200075088262.0297
+0990 =-101098.0090(06602006)
+191=17890_10_50109(01090, 109=7017).
+~…~…~60060. 7 2ㅣ
+102
+위 의 코 드 롬 0 ㅁ . 6662 ㅁ 로 저장 후 섬 행 시 카 민 592226. 바 로 결 파 가 봉 성 된 다 .
+------------------------------
+
+[기본 전처리_영어 전용]
+신뢰도: 0.60
+길이: 448
+내용:
+4. Python@]A] Tesseract A}B*7] (pyteaeeract)
+Pythont] Tesseract AHE0}7] FGl4t= pytesneract®} pillow! i Xfego} sich.
+coneO1 4 pip AA Ct.
+>pip install pillow
+>pip install pytesseract
+Vt BUS OF 22 SEe Be SE > oth
+fom Pi bupat Image
+‘fom pylesseract import*
+filename ="DDaiaocisemple ns”
+image = Image open(filename)
+‘tent = Image_fo_stringfimage, lang="kor")
+‘wih open(smmgiakf, “west
+‘ftwnie(iext}
+$9] EH ocr_fassemact py ME ANGALVT semplo.tat 7h BI.
+------------------------------
+
+[기본 전처리_숫자 전용]
+신뢰도: 0.49
+길이: 27
+내용:
+447
+407140
+0144
+22
+5
+991047
+------------------------------
+
+[기본 전처리_한영숫자]
+신뢰도: 0.66
+길이: 112
+내용:
+40006666036891666002
+A2719041-27
+4274
+012022
+0600-070002000750882620297
+191-178901050109101090109-7017
+AA0AAA-7A
+------------------------------
+
+[적응적 임계값_기본 한영]
+신뢰도: 0.59
+길이: 373
+내용:
+4 Python®]A] 7655612 다 시 음 하 기 (09125500229
+
+ppytbactif assoractEs AZ] SSDs pyessoact} pines 4340).
+cSt pind C2006 CE.
+
+opi ital plies
+
+pip install pytassarect
+
+선 치 가 곱 니 디 Ot de SEB oe ees st.
+
+tom PiLinpert Iimago
+
+tum gytessarect import *
+
+tayo = Ingnepmnflonarm ㅇ
+
+tt=tmagp fo 2. bata)
+
+whhopenfeamptatl, west
+
+워 의 EE ocr fosseract ppl 9S} CHAD sommptn El TIP 산 싱 된 다 .
+------------------------------
+
+[적응적 임계값_세밀 한영]
+신뢰도: 0.32
+길이: 4
+내용:
+!셨쿰폭
+------------------------------
+
+[적응적 임계값_블록 단위]
+신뢰도: 0.51
+길이: 43
+내용:
+소 려 모 띠 에 서 7655902 다 사 음 하 기 (09125500 ㅁ 대
+------------------------------
+
+[적응적 임계값_한글 전용]
+신뢰도: 0.52
+길이: 372
+내용:
+소 레 미 때 에 서 7655612 다 시 음 하 기 (09125500229
+
+9200 메 서 765960333 사 당 학 기 위 머 서 는 [905996 가 009 만 섭 치 시 파 합 다 .
+<4 메 서 0 모 겁 차 단 함 다 .
+
+=026520002020:
+
+페 2 62[051055003 다
+
+선 치 가 곱 니 디 이 기 아 깊 근 코 드 8.8 데 섭 압 합 수 있 다 .
+
+ㄷ 0 ㅁ 016020122009
+
+00091255 페 2 다 조 띠
+
+눕펙|8= ㅇ
+
+6 파 =1208 고 2 2. 연 - 며구
+
+기 편 대 ( 조 판 、 토
+
+워 의 모 드 다 00._0550209 모 지 항 후 삽 앙 시 마 면 6 ㄷ 26. 모 감 파 가 산 싱 된 다 .
+------------------------------
+
+[적응적 임계값_영어 전용]
+신뢰도: 0.61
+길이: 444
+내용:
+4. PythonQ/Al Tesseract A436}7] (pytessarach)
+Pythontija] TessoractEt AHSC}7] SA pytessorect?} pillows 435}S0} eich.
+ex pipe CONE Cict.
+opi ital plies
+>pip itstall pytesserect
+CAV BU Oi 72 SEB Bed ose > eh
+tom PiLinpert Iimago
+tom pytesserect kmport*
+{enema ="DiDaizfoafssmptalps”
+nego = Inagaepenfilenm)
+text=oagp_fo_sttiog{inaga, ieng—"kor"}
+wihopanfemmmiakf, “west
+fieniofiex}
+$940) SIF} ocy_fossoract rylA AIS CAIAISTE sorrpintetll ZI} SET.
+------------------------------
+
+[적응적 임계값_숫자 전용]
+신뢰도: 0.55
+길이: 34
+내용:
+444367
+450743550
+3042
+0722
+2
+94047
+------------------------------
+
+[적응적 임계값_한영숫자]
+신뢰도: 0.55
+길이: 36
+내용:
+40A413019
+A7943A0
+042006
+A-
+949A9-AZ
+------------------------------
+
+[Otsu 임계값_기본 한영]
+신뢰도: 0.57
+길이: 434
+내용:
+4.00020 에 서 666606 다 사 룡 하 기 (pyineneract}
+70 매 메 서 0002002 다 와 사 룡 하 기 위 배 서는 pyinemeractt piliowil 설 차 해 야 한 다 .
+cet pip 2048 한 다 .
+000220000
+>pip imiall pyiaeseract
+살 치 가 끔 냐 민 OF 8 코 드 롬 동 해 싱 향 할 수 있 다 .
+from PL beport nage
+fom pylseseract import*
+fieneme = "DDeieboofsmpia bs"
+iunge = Insga.opee(eneme)
+{emt = bunge_fo_shingiimage, 22727
+wh open(ammpiaGf, “west
+0029
+위 의 코 드 로 0 ㅁ . 606602 다 로 저장 후 섬 병 시 카 민 22206 . 바 로 BH} Bt.
+------------------------------
+
+[Otsu 임계값_세밀 한영]
+신뢰도: 0.00
+길이: 3
+내용:
+= -
+------------------------------
+
+[Otsu 임계값_블록 단위]
+신뢰도: 0.57
+길이: 422
+내용:
+4.00020 에 서 666606 다 사 룡 하 기 (pyineneract}
+
+70 매 메 서 0002002 다 와 사 룡 하 기 위 배 서는 pyinemeractt piliowil 설 차 해 야 한 다 .
+cnt pip 47H 한 다 .
+
+22200
+
+2 iutall pytneseenct
+
+0} 끔 냐 민 Ont 8 코 드 롬 ee > 있 다 .
+
+ftom PAL beport Image
+ftom pytseseract import*
+
+name = 70.0602626266.600"
+bange -22006.420600600226)
+{emt = bunge_fo_shingiimage, 22727
+
+wh open(ammpiaGf, “west
+0
+
+위 의 코 드 로 0 ㅁ . 606602 다 로 저장 후 섬 병 시 카 민 22206 . 바 로 BH} Bt.
+------------------------------
+
+[Otsu 임계값_한글 전용]
+신뢰도: 0.53
+길이: 389
+내용:
+4.00020 에 서 666606 다 사 룡 하 기 들 916260= ㄷ 아
+70 매 메 서 0002002 다 와 사 룡 하 기 위 배 서는 [ 기 0662006 다 아 0060 도 월 설 차 해 야 한 다 .
+정 매 서 560 설 치 들 한 다 .
+000220000
+부 해 래 12222 래 다
+살 치 가 끔 냐 민 이 때 와 경 은 코 드 롬 동 해 싱 향 할 수 있 다 .
+…~>>0622
+20…~……200 ㅁ ;2200>
+-07066200226666.629
+-22006.026208606226)
+= ~Ｌ~--.06, 22727
+=-~…Ｌ2060.1 ~ ㄷ
+0029
+위 의 코 드 로 0 ㅁ . 606602 다 로 저장 후 섬 병 시 카 민 22206 . 바 로 결 파 가 봉 성 된 다 .
+------------------------------
+
+[Otsu 임계값_영어 전용]
+신뢰도: 0.60
+길이: 431
+내용:
+4 Python@]A] Tesseract 4}5 4471 (pyteeneract)
+Pytroeti] Ad Tossnnctilt AHC7] Flt pytsemeract®} piiowil 1240G0} HC}.
+cmeO A pip AE Ct.
+pip buiall plow
+> pip iuntall pyiaeseenct
+Vt BUG OFS 38 2Ee Be SE >
+from PL bepat Ieage
+fom pylseeerect import*
+fieaeee ="D0sieboteepiabs”
+image = Inegeopeefieneee)
+fant = bunge_fo_stingfimage, leng="tnr")
+wh open(ammgiabf, “west
+ftutie(ent}
+‘$94 MEM ocr_fanweract py ME ANGALOIT semple.tat 7h BU.
+------------------------------
+
+[Otsu 임계값_숫자 전용]
+신뢰도: 0.56
+길이: 37
+내용:
+44454471
+4174012400
+0
+08382
+0
+0
+94047
+------------------------------
+
+[Otsu 임계값_한영숫자]
+신뢰도: 0.65
+길이: 60
+내용:
+4AA417
+4A52471900A-417407
+2048
+0718
+-07066200226666629
+zAAA-
+------------------------------
+
+[모폴로지 처리_기본 한영]
+신뢰도: 0.56
+길이: 429
+내용:
+4. 00020 메 서 666006 다 사 룡 하 기 들 61922002 ㄷ )
+702 메 서 70000 다 완 AHEM] 위 비 서는 pyteemeract® plowil 설 치 해 마 한 다 .
+ceil pip 술 치 를 한 다 .
+>pip butall plow
+>pip butall pytsenesact
+살 치 가 BU Ot AE 코 드 롬 동 해 NE 수 있 다 .
+_ ㅡ며 Image
+trom pylsesnract import *
+name = 70.7060262666.600"
+bene = Inegacpen(enme)
+{emt = bange_fo_shingiimage, leng—"ta")
+‘wih open( sampling, “e") est
+1… ㅡ ｜
+위 의 RE ocr_fnssesact py 저장 후 심 뱅 시 카 민 22206 보 로 걸 파 가 Bt.
+------------------------------
+
+[모폴로지 처리_세밀 한영]
+신뢰도: 0.00
+길이: 0
+내용:
+
+------------------------------
+
+[모폴로지 처리_블록 단위]
+신뢰도: 0.58
+길이: 439
+내용:
+4.00020 에 서 666606 다 사 룡 하 기 (pyineneract}
+
+Potosi 4 Tesnnrnctill 사 룡 하 기 위 배 서는 pyineneract} piliowil 설 차 해 마 한 다 .
+cnt pip 4738 한 다 .
+
+002222
+
+pip iuniall pyinessenct
+
+70} 끔 니 민 야 매 와 8 코 드 롬 동 해 ee 수 있 다 .
+
+ftom PL beport Image
+ftom pyseseract Import*
+
+ieneee = 70.0660005226266.997
+Iunge = Inega.opee(eneme)
+{emt = bange_fo_shingiimage, leng—"ta")
+
+wh open(ammpiaGf, “west
+02
+
+위 의 RE ocr_fnssesact py 저장 후 심 뱅 시 카 민 22206 보 로 걸 파 가 Bt.
+------------------------------
+
+[모폴로지 처리_한글 전용]
+신뢰도: 0.52
+길이: 403
+내용:
+4 00020 메 서 666006 다 사 룡 하 기 들 61922002 ㄷ )
+702 메 서 70000 다 완 사 용 차기 위 비 서는 메 66200 다 아 [980= 월 설 치 해 마 한 다 .
+창 매 서 0550 술 치 를 한 다 .
+거루
+겐 려 1 래 래 [3222 래 다
+살 치 가 끝 냐 민 야 매 와 겉 은 코 드 롬 동 해 싱 형 함 수 있 다 .
+_ ㅡ며 ㅡㅡ
+펴 재 131220 리 대 도던 ^
+= 70.7060262666.600"
+…-22002.420000600226
+가 -66900 1 _…~2~-… ㅣ 00..60-76-2
+=…~…~ ㅡ 2260. 7 ~ ㄷ Ｌ
+1… ㅡ ｜
+위 의 코 드 로 0 ㅁ 600002 다 [75 로 저장 후 심 뱅 시 카 민 22206 보 로 걸 파 가 생 성 된 다 .
+------------------------------
+
+[모폴로지 처리_영어 전용]
+신뢰도: 0.60
+길이: 441
+내용:
+4 Python@]A] Tesseract 4}5 4471 (pyteeneract)
+Pytroeti] Al Tossnenctilt AHCt7] SR} Alte pytsemeract®} piiowil 224eg0} fC}.
+cnesO A pip AE fCt.
+pip buiall pion
+> pip iuntall pyteesernct
+201 BUG OFS 8 SEE Be SE >
+from PL bepat Ieage
+‘fom pylseeeract port *
+fieaeee ="DDsiebooteepiabs”
+image = Inegeopen(enes)
+fant = bunge_fo_stingfimage, leng="tnr)
+wh open(ammuiabf, “west
+tunin(end)
+$091 MEM ocy_founeract py MEF ANGALNICS sample tat Bt PERT.
+------------------------------
+
+[모폴로지 처리_숫자 전용]
+신뢰도: 0.55
+길이: 34
+내용:
+44454471
+4172240
+0
+201282
+0
+109147
+------------------------------
+
+[모폴로지 처리_한영숫자]
+신뢰도: 0.62
+길이: 104
+내용:
+4A445471
+A714-4117400
+4040
+071A-
+
+--2
+
+-70706026266646007
+
+-22002420000600226
+
+-669002-0060-76-2
+94AAA17
+------------------------------
+
+[샤프닝_기본 한영]
+신뢰도: 0.58
+길이: 470
+내용:
+400 에 서 7689602 다 사 용 하 기 (pytesseract}
+Pythont] Tesseract 샤 용 하 기 HS} pytesseract pillows 설 치 해 야 한 다 .
+ㅁ 9 창 메 서 pip 설 치 를 한 다 .
+>pip install pillow
+>pip install pytesseract
+설 치 가 끝 니 민 이 래 화 Be 코 드 를 통 해 실 행 할 수 있 다 .
+from PIL import Image
+from pytesseract import*
+filename = "DiDafafoofsampte. ipa”
+Image = Image.spen filename)
+text=Image_fo_stringfimage, lang-"kor")
+‘wih open(samplatef, “w'}as ft
+006063
+위 의 RES on_fesseract pyS 저장 후 설 행 시 키 편 sample BA} 생 성 된 다 .
+------------------------------
+
+[샤프닝_세밀 한영]
+신뢰도: 0.00
+길이: 3
+내용:
+= ;
+------------------------------
+
+[샤프닝_블록 단위]
+신뢰도: 0.58
+길이: 471
+내용:
+400 에 서 7689602 다 사 용 하 기 (pytesseract}
+
+Pythont] Tesseract 샤 용 하 기 HS} pytesseract pillows 설 치 해 야 한 다 .
+enol pip 설 처 몰 한 다 .
+
+>pip install pillow
+
+>pip install pytesseract
+
+심 치 가 끔 냐 민 야 래 화 같 은 코 드 롬 통 해 설 행 학 수 있 다 .
+
+ftom PIL import Image
+from pytesseract import*
+
+{iiename = "DuDatafoctsample ps"
+image = Image spen(flename)
+text=Image_fo_stringfimage, lang-"kor")
+
+‘wih open(samplatef, “w'}as ft
+000606
+
+위 의 RES on_fesseract pyS 저장 후 설 행 시 키 편 sample BA} 생 성 된 다 .
+------------------------------
+
+[샤프닝_한글 전용]
+신뢰도: 0.56
+길이: 453
+내용:
+400 에 서 7689602 다 사 용 하 기 (298998853 ㅁ 2
+00800 메 저 76556020 를 샤 용 하 기 위 해 서는 091955808 ㅁ 화 100 를 설 치 해 야 한 다 .
+ㅁ 9 창 메 서 60 로 설 치 를 한 다 .
+ㅋ 2951210009
+0951910091855618 다 .
+설 치 가 끝 니 민 이 래 화 갈 은 코 드 를 통 해 실 행 할 수 있 다 .
+6078.60801190999
+ㄷ 000918556818 다 090 펴 ,
+ 060808="0470810910066900012109"
+00898=10998.909009090 ㅁ 레
+(6=00898 10 51009(00398, 309=6 마 아
+'00080(590000288 . 70)25 노
+006063
+위 의 코 드 롤 0 ㅁ 855602 ㅁ 로 저장 후 설 행 시 키 편 530 8.0 모 결 파 가 생 성 된 다 .
+------------------------------
+
+[샤프닝_영어 전용]
+신뢰도: 0.61
+길이: 457
+내용:
+4. Python] Tesseract 4436}7] (pytesseract)
+pythontlAd Tesseract AHS8}7] SeRAE= pytessaract?} pillowd siAjefop ech.
+cane0]4 pip S14 tic.
+>pip install pillow
+> pip install pytesseract
+eV Bue OF Be SEe Bel et > seh
+from PIL iupart Image
+from pytesseract import*
+filename ="D/Dalafonfsample ips”
+image = Image.openfilename)
+text= image _fo_sting(imaga, lang-"kor)
+‘wih open('sampla fet, “west
+funiteftext}
+AO) EM ocr fosseract py MS AALS seumploutatlA Beh eset.
+------------------------------
+
+[샤프닝_숫자 전용]
+신뢰도: 0.49
+길이: 25
+내용:
+4044367
+4870
+04214
+22
+907
+------------------------------
+
+[샤프닝_한영숫자]
+신뢰도: 0.65
+길이: 137
+내용:
+40076896022989988532
+A271-A-A0
+014-2718
+A7022
+060808-0470810910066900012109
+00898-10998909009090
+6-008981051009100398309-6
+
+006063
+A9AAAA
+------------------------------
+
+[2배 확대_기본 한영]
+신뢰도: 0.57
+길이: 500
+내용:
+4. Python@§A] Tesseract A}ZS}7] (pyteseeract)
+python0j|| Tesseract 사 용 하 기 9/441 pytesseract?} pillow 설 치 해 야 한 다 .
+ㅁ 9 장 매 서 6620 설 치 를 한 다 .
+>pip install pillow
+>pip install pytesseract
+설 치 가 끝 니민 야 래 와 같 은 코 드 를 통 해 실 행 할 수 있 다 .
+from PIL import Image
+from pytesseract import *
+filename = "D:/Data/ocr/sample. ipa”
+image = Image.open(filename)
+text = image_fo_string{image, lang="kor")
+wih open(‘samplaizf’, “w"} as f
+fwrite(text)
+위 의 RES ocr_fecsernct py 저장 후 실 형 시 키민 sample. tet 결 가 가 생 성 된 다 .
+------------------------------
+
+[2배 확대_세밀 한영]
+신뢰도: 0.00
+길이: 5
+내용:
+= - ;
+------------------------------
+
+[2배 확대_블록 단위]
+신뢰도: 0.56
+길이: 504
+내용:
+4.6/0000 에 서 .6566902 ㅁ 시 용 하 기 (pyteseeract)
+
+00000 메 서 Tesseract 사 용 하 기 위 해 서는 0/1655812 ㅁ 와 0000 를 설 치 해 야 fic}.
+ㅁ 9 창 메 서 pip 설 치 를 한 다 .
+
+>pip install pillow
+
+>pip install pylesseract
+
+설 치 가 끝 니민 야 매 와 22 코 드 를 동 해 실 형할 수 있 다 .
+
+from PIL buport Image
+from pylesseract import *
+
+filename = "D:/Data/ocr/sample. ipa”
+image = Image.open(filename)
+text = image_fo_string{image, lang="kor")
+
+wih open( ‘sample taf’, “w") es f
+fwrite(text)
+
+위 의 SE oc_fesseract py 저장 후 심 행 시 키민 sample ttl 결 과 가 생 성 된 다 .
+------------------------------
+
+[2배 확대_한글 전용]
+신뢰도: 0.56
+길이: 456
+내용:
+4.60600 에 서 18889602 다 사 용 하 기 (0068886023 ㅁ )
+01000 에 서 7655602 ㅁ 를 사 용 하 기 위 해 서는 008556[2 ㅁ 와 ㅁ [06 를 설 치 해 야 한 다 .
+ㅁ 9 장 매 서 6620 설 치 를 한 다 .
+00 0519100009
+00 091910091855618 다
+설 치 가 끝 니민 야 래 와 같 은 코 드 를 통 해 실 행 할 수 있 다 .
+00 미 10000100896
+00119185508 대 10000 비
+603008="070381800005907016309"
+00898=100998.90900090909)
+[6=10898 10 50109(00898, 1319- & )
+드1 000199 . 7- ㅡ ) 2ㄷ
+06006[660)
+위 의 코 드 롬 0 ㅁ ㅎ 8902 ㅁ 로 저장 후 실 형 시 키민 599806. 다 로 결 가 가 생 성 된 다 .
+------------------------------
+
+[2배 확대_영어 전용]
+신뢰도: 0.60
+길이: 475
+내용:
+4. Python] A] Tesseract A}8417] (pytesseract)
+Python] Tesseract AHEA71 S16l)44t= pylesnoract® pillow! 4i2tegot fic}.
+condiOL4| pip 14H tict.
+>pip install piiow
+>pip install pyfesseract
+40071 BUel OSS Ze EE Bed asa + ert.
+from PEL beport Image
+from pytesseract import *
+flename = "DADalaiocfsample ins"
+image = Image.openffilename)
+text = image_fo_siring{image, lang—"kor"})
+wih open(samgiaizf, “e*} as £
+funiiefient)
+$191 REI ocr fessemct py ME % ANGA1PIC sample tall Bt PEt.
+------------------------------
+
+[2배 확대_숫자 전용]
+신뢰도: 0.59
+길이: 38
+내용:
+448417
+47191644420
+01414
+40071
+1911717
+------------------------------
+
+[2배 확대_한영숫자]
+신뢰도: 0.66
+길이: 128
+내용:
+460600188896020068886023
+0A5794A120-
+442
+012
+603008-070381800005907016309
+16-108981050109008981319-6
+
+10001999267137-0
+1AA47101A
+------------------------------
+
+[2배 확대 + Otsu_기본 한영]
+신뢰도: 0.57
+길이: 442
+내용:
+4. Python@§A] 66260 다 사 룡 하 기 029022000 대 )
+Pyros Tesseract 시 뭉 하 기 위 미 서는 pyinemeract} plow 설 치 해 야 한 다 .
+9 장 매 서 pip 설 치 들 한 다 .
+>pip imiall plow
+>pip intel pytncseenct
+설 치 가 Biel ORES} 갖 은 코 드 를 동 해 성 형할 수 있 다 .
+fom PAL 862019606
+from pylsesaract import *
+faname = ' 1070606200075926666.809
+bangs = Inega.cpen(Heneme)
+tant = bunge_fo_sbingiimage, eng")
+1026 . a") ~
+fLunin(ient)
+위 의 REF ocr_feccenct py 저장 후 심 병 시 카 민 seeple. tat 결 파 가 BA.
+------------------------------
+
+[2배 확대 + Otsu_세밀 한영]
+신뢰도: 0.00
+길이: 5
+내용:
+= - j
+------------------------------
+
+[2배 확대 + Otsu_블록 단위]
+신뢰도: 0.57
+길이: 436
+내용:
+4.60000 에 서 662006 다 시 둥 하 기 606600
+
+07000 메 서 7606606 다 랄 시 풍 하 기 994] t= [622000 다 아 pltowil 설 치 해 야 한 다 .
+cone pip 설 치 를 한 다 .
+
+2122 plow
+
+>pip junta pylaeseenct
+
+살 치 가 끝 니민 야 메 와 BE SES 동 해 성 형할 수 있 다 .
+
+from PL 믹 00 ]
+fom pyiseseract import *
+
+faname = ' 1070606200075926666.809
+bangs = Inega.cpen(Heneme)
+tant = bunge_fo_sbingiimage, eng")
+
+wih 00262 . ) os f
+Le ee J
+
+위 의 코 드 롬 ocr_faccenct py 저장 후 심 병 시 키민 sepia. tot 결 파 가 BEI.
+------------------------------
+
+[2배 확대 + Otsu_한글 전용]
+신뢰도: 0.55
+길이: 414
+내용:
+4.00000 서 66260 다 사 룡 하 기 029022000 대 )
+므 매 메 서 1600000 다 와 시 뭉 하 기 위 미 서는 62200 다 와 0006 을 설 치 해 야 한 다 .
+9 장 매 서 6520 설 치 들 한 다 .
+거쁘 00202
+거 2래 [ 해 2200 래 다
+설 치 가 끝 니 민 야 메 아 갖 은 코 드 를 동 해 성 형할 수 있 다 .
+음 1제 862019606
+을 00090600000 대 60201
+66990- ' 1070606200075926666.809
+~ -260806.020600606226)
+=62900 ㅁ 356000906, ~~ )
+1026 . 7-~) ~
+209660990)
+위 의 코 드 롬 0 ㅁ ㅎ 6606 ㅁ 로 저장 후 심 병 시 카 민 292966.66 로 결 파 가 생 언 된 다 .
+------------------------------
+
+[2배 확대 + Otsu_영어 전용]
+신뢰도: 0.60
+길이: 451
+내용:
+4. Python@]A] Tensernct AHGe17] (pytenneract)
+Prion] Tossnenctllt AHR] Fl Al: pyinemoract® pillow! 41 2eg0t fC}.
+conti pip A044: fict.
+>pip ial pillow
+>pip iuiall pyineseract
+420071 BUel ONES Ze EE Bed ase + ert.
+fom PEL bepert mage
+fom pyiseseract eport *
+enene = "DADsiaiooteeia hs"
+bange = Inege.coee(Beneme)
+tant = benge_fo_sbiagiimage, leng="x*})
+wih opan(aamgiaizf, “e*} as £
+funin(ent}
+$494 REI ocr fecsemnct py MEH ANGA1PITl sample tall Bt PE.
+------------------------------
+
+[2배 확대 + Otsu_숫자 전용]
+신뢰도: 0.53
+길이: 31
+내용:
+44417
+47141200
+044
+420071
+94941
+------------------------------
+
+[2배 확대 + Otsu_한영숫자]
+신뢰도: 0.64
+길이: 148
+내용:
+40000066260029022000
+A714A-417400
+40448
+073-
+
+001862019606
+
+66990-1070606200075926666809
+
+6-260806020600606226
+
+-62900356000906-7
+
+10267-
+42AAA1910A
+------------------------------
+
+[CLAHE 대비 강화_기본 한영]
+신뢰도: 0.57
+길이: 487
+내용:
+4.6/000 에 서 7966603 다 사 용 하 기 (pytesseract)
+070 애 에 서 7055002 디 를 사 용 하 기 위 해 서는 001065500= 다 와 00808 를 설 치 해 야 한 다 .
+9 창 에 서 pip 설 치 를 한 다 .
+>pip install pillow
+>pip install pytesseract
+설 치 가 끝 니민 이 래 와 Be 코 드 를 통 해 실 행 할 수 있 다 .
+from PIL import Image
+‘from pytesseract import *
+filename = "D:/Data/ocr/sample.jpg"
+image = Image.open(filename)
+‘text = image_to_string(image, lang="kor")
+‘wih open(sampleizf, "w'} 2ㅣ
+10
+위 의 REM ocr_fesseract py 저장 후 실 행 시 키 면 sample. tat 결 과 가 생 성 된 다 .
+------------------------------
+
+[CLAHE 대비 강화_세밀 한영]
+신뢰도: 0.00
+길이: 3
+내용:
+= -
+------------------------------
+
+[CLAHE 대비 강화_블록 단위]
+신뢰도: 0.56
+길이: 504
+내용:
+4.6/000 에 서 7966603 다 사 용 하 기 (pytesseract)
+
+070 애 에 서 7055002 디 를 사 용 하 기 위 해 서는 001065500= 다 와 00808 를 설 치 해 야 한 다 .
+0 창 에 서 pip 설 치 를 한 다 .
+
+>pip install pillow
+
+>pip install pytesseract
+
+설 치 가 끝 니민 야 래 와 같 은 코 드 를 통 해 실 행 할 수 있 다 .
+
+trom PIL import Image
+‘trom pytesseract import*
+
+{flename = "D:/Data/ocr/sample jog"
+mage = Image open(fiename)
+‘text = image_to_string(image, lang="kor")
+
+‘wih open(sampleizf, "w'} 2ㅣ
+‘tunitefiext)
+
+위 의 REM ocr_fesseract py 저장 후 실 행 시 키 면 sample. tat 결 과 가 생 성 된 다 .
+------------------------------
+
+[CLAHE 대비 강화_한글 전용]
+신뢰도: 0.55
+길이: 453
+내용:
+4.6/000 에 서 7966603 다 사 용 하 기 20629860 ㅁ ㄷ
+070 애 에 서 7055002 디 를 사 용 하 기 위 해 서는 001065500= 다 와 00808 를 설 치 해 야 한 다 .
+9 창 에 서 00? 로 설 치 를 한 다 .
+ㅋ 200 1 레 미 0
+0 1121[0110556810 다 .
+설 치 가 끝 니민 이 래 와 같 은 코 드 를 통 해 실 행 할 수 있 다 .
+60088001899999
+『0 ㅁ 01955010 디 001
+900009 =-"0700121000758090662.309"
+0990 =101098.0000(01602006)
+194=11890_10_50109(01090, 109=-70017)
+0020(5000262. 따 ~ 2ㅣ
+10
+위 의 코 드 를 0 ㅁ ㅎ 55002 ㅁ ?? 로 저장 후 실 행 시 키 면 5906. 바 로 결 과 가 생 성 된 다 .
+------------------------------
+
+[CLAHE 대비 강화_영어 전용]
+신뢰도: 0.59
+길이: 481
+내용:
+4. Python0A] Tesseract A} S27] (pytesseract)
+python0]4] Tesseract AHB8}71 #e4}t= pytesseract} pillow! ai xjeqop sich.
+cancf@tO14 pip 24H Pict.
+>pip install pillow
+>pip install pytesseract
+et Bel OF} 22 Se Be ee > oth
+‘from PIL import Image
+‘trom pylesseract import *
+filename = "D-/Dala/ocr/sample Ipc”
+image = Image open(filename)
+text = image_to_string(image, lang="kor")
+‘wih open(‘sampla.izf’, “w"} es ft
+‘ftwnite(text)
+419] =H ocr_fessoract py ME AWA}F(C samplo.tet Ba7h Beet.
+------------------------------
+
+[CLAHE 대비 강화_숫자 전용]
+신뢰도: 0.57
+길이: 37
+내용:
+404327
+044487142
+014424
+22
+5
+41910497
+------------------------------
+
+[CLAHE 대비 강화_한영숫자]
+신뢰도: 0.65
+길이: 120
+내용:
+460007966603206298602
+0AA2710-41-2704
+01-42171
+122
+
+60088001899999
+
+900009-07001210007580906623097
+
+0020500026272
+A20A7A
+------------------------------
+
+[언샤프 마스킹_기본 한영]
+신뢰도: 0.57
+길이: 475
+내용:
+4. Python0#A] Tesseract A}Z6{7] 689166660 ㅁ ㄷ
+PithontAl Tesseract 사 용 차기 위 해 서는 pyosseract*t pillowll 설 치 해 야 한 다 .
+cmt pip 설 치 들 한 다 .
+> pip install pillow
+> pip install pytesseract
+설 치 가 끝 냐 민 이 래 와 22 코 드 를 Bel 실 형할 수 있 다 .
+fom PIL buport Image
+‘from pytesseract import *
+‘flename = "DDalafoofsampleing”
+Image = Image.open(flename)
+{ext = mage_fo_stingfimage, lang—"tnr")
+‘wih open(sampla Gf, ~ 2ㄷ
+060229
+위 의 코 드 롬 0 ㅁ . 55252 ㅁ 로 저장 후 심 행 시 카 민 sample ttl 결 파 가 생 성 된 다 .
+------------------------------
+
+[언샤프 마스킹_세밀 한영]
+신뢰도: 0.00
+길이: 3
+내용:
+= ;
+------------------------------
+
+[언샤프 마스킹_블록 단위]
+신뢰도: 0.57
+길이: 479
+내용:
+4. Python0#A] Tesseract A}Z6{7] 689166660 ㅁ ㄷ
+
+PithontAl Tesseract 사 용 차기 위 해 서는 pyosseract*t pillowll 설 치 해 야 한 다 .
+ㅁ 청 매 서 56 로 설 치 를 한 다 .
+
+>pip install plow
+
+>pip install pytesseract
+
+P01 끝 냐 민 야 래 와 같 은 코 드 롬 통 해 실 형할 수 있 다 .
+
+ftom PIL buport Image
+thom pytesseract import*
+
+{lename = "DDataootsamplels"
+image = Inepa.open(liename}
+{ext = mage_fo_stingfimage, lang—"tnr")
+
+‘wih open(sampla Gf, ~ 2ㄷ
+twinge)
+
+위 의 MEM ocr_fossemnct py 저장 후 심 행 시 카 민 sample ttl 결 파 가 생 성 된 다 .
+------------------------------
+
+[언샤프 마스킹_한글 전용]
+신뢰도: 0.56
+길이: 432
+내용:
+4.0000 에 서 7666602 ㅁ 사 용 하 기 689166660 ㅁ ㄷ
+0000 메 서 7655802 다 를 사 용 차기 위 해 서는 00/655602 다 아 0000 를 설 치 해 야 한 다 .
+0 청 매 서 762 로 설 치 들 한 다 .
+ㅋ 000210000
+0001066556063 다
+설 치 가 끝 냐 민 이 래 와 같 은 코 드 를 동 해 실 형할 수 있 다 .
+. 2.2~6902
+600000655802 ㅁ 라
+062009 = 107020200075229262.29"
+023998 =1002920.9020000902009)
+1 =02398 10 50109(003298, 2209=7627 가
+0100022062.1 ~ 2ㄷ
+060229
+위 의 코 드 롬 0 ㅁ . 55252 ㅁ 로 저장 후 심 행 시 카 민 5226. 바 로 결 파 가 생 성 된 다 .
+------------------------------
+
+[언샤프 마스킹_영어 전용]
+신뢰도: 0.60
+길이: 453
+내용:
+4. Python@]A] Tesseract A} }7] (pyteaneract)
+PythontjAd Tesseract AHECt7] Se}At= pytesseract®} pillow! 21X}ego} sich.
+eoneSQ014 pip AOA tC.
+pip install plow
+> pip install pytesseract
+eV Be OF 22 SEe Be SE > ott
+fom Pi bupat Image
+fom pylesseract import*
+filename ="DDaiaocisempie ins”
+Image = Image.openfilename)
+tent = buage_fo_string{image, lang-"kor")
+‘wih open(samgiahf, “west
+ftunie(iexi}
+$9) REM ocr_fassemnct py ME ANGALVT sempto.tatlh Be7h Beet.
+------------------------------
+
+[언샤프 마스킹_숫자 전용]
+신뢰도: 0.52
+길이: 29
+내용:
+44487
+4714210
+90144
+222
+94047
+------------------------------
+
+[언샤프 마스킹_한영숫자]
+신뢰도: 0.66
+길이: 149
+내용:
+4000076666026891666602
+AA27199641-2170
+421748
+01022
+062009-107020200075229262297
+
+023998-10029209020000902009
+
+10239810501090032982209-7627
+AA0AAA-A-
+------------------------------
+

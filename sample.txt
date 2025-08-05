@@ -1,0 +1,14 @@
+4. PythonO|A] 76896[30 사 용 하 기 (pytesseract)
+050000 에 서 Tesseract 사 용 하 기 위 해 서는 pytesseract®t pillow 설 치 해 야 한 다 .
+cmd pip 설 치 를 한 다 .
+>pip install pillow
+>pip install pytesseract
+설 치 가 끝 나면 아 래 와 같 은 BOS 통 해 실 행 할 + 있 다 .
+from PIL import Image
+from pytesseract import *
+filename = "D:/Data/ocr/sample.jpo"
+image = Image.open(filename)
+text = image_to_string(image, lang="kor")
+with open("sample.txt”, "w") as 『
+f.write(text)
+위 의 BES ocr_tesseract py] 저장 후 VHAl7|H sample txt= 결 과 가 생 성 된 다 .
