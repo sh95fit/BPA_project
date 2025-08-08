@@ -5,7 +5,7 @@ import cv2
 
 # 이미지 개선
 # filename = r"C:/Users/USER/OneDrive/Desktop/Company/업무내용/배송관련이슈/listup/fulfill/ocr_sample.png"
-filename = r"fulfill\ocr_sample.png"
+filename = r"ocr\ocr_sample.png"
 image = cv2.imread(filename)
 # gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 # blurred_image = cv2.GaussianBlur(gray_image, (5, 5), 0)
@@ -30,6 +30,6 @@ custom_config = r"--psm 6 --oem 3"
 # text = pytesseract.image_to_string(blurred_image, lang="kor+eng")
 text = pytesseract.image_to_string(image, lang="kor+eng", config=custom_config)
 
-with open("./ocr_sample.txt", "w", encoding="utf-8") as f:
+with open("ocr/ocr_sample.txt", "w", encoding="utf-8") as f:
     f.write(text)
     print(text)
